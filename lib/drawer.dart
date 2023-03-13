@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:snackbar_with_getx/screens/bottomsheet_screen.dart';
 import 'package:snackbar_with_getx/screens/internationalization_screen.dart';
+import 'package:snackbar_with_getx/screens/reordable_listview_screen.dart';
 import 'package:snackbar_with_getx/screens/showdialog_screen.dart';
 import 'package:snackbar_with_getx/screens/snackbar_screen.dart';
 import 'package:snackbar_with_getx/screens/uppercase_screen.dart';
@@ -52,6 +53,12 @@ class CommonDrawer extends StatelessWidget {
             title: const Text('Uppercase'),
             onTap: () {
               Navigator.pushReplacementNamed(context, UpperCaseScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Reordable Listview'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, ReordableListviewScreen.id);
             },
           ),
         ],
