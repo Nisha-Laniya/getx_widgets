@@ -7,7 +7,6 @@ class ReordableListviewController extends GetxController{
       if(newIndex>oldIndex) {
         newIndex -= 1;
       }
-
       final items = myfav.removeAt(oldIndex);
       myfav.insert(newIndex, items);
   }

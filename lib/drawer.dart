@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:snackbar_with_getx/screens/bottomsheet_screen.dart';
+import 'package:snackbar_with_getx/screens/call_screen.dart';
 import 'package:snackbar_with_getx/screens/internationalization_screen.dart';
+import 'package:snackbar_with_getx/screens/qrcode_screen.dart';
 import 'package:snackbar_with_getx/screens/reordable_listview_screen.dart';
+import 'package:snackbar_with_getx/screens/scratcher_screen.dart';
 import 'package:snackbar_with_getx/screens/showdialog_screen.dart';
 import 'package:snackbar_with_getx/screens/snackbar_screen.dart';
 import 'package:snackbar_with_getx/screens/uppercase_screen.dart';
@@ -59,6 +62,24 @@ class CommonDrawer extends StatelessWidget {
             title: const Text('Reordable Listview'),
             onTap: () {
               Navigator.pushReplacementNamed(context, ReordableListviewScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Qr Code'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, QrCodeScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Call'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, CallScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Scratcher'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, ScratcherScreen.id);
             },
           ),
         ],
