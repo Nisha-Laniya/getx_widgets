@@ -5,7 +5,7 @@ import '../controller/scratcher_controller.dart';
 import 'package:scratcher/scratcher.dart';
 
 class ScratcherScreen extends GetView<ScratcherController> {
-  static const String id = '/scratcherscreen';
+  static const String id = 'scratcherscreen';
   const ScratcherScreen({Key? key}) : super(key: key);
 
   @override

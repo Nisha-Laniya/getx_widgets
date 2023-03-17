@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:snackbar_with_getx/screens/bottomsheet_screen.dart';
 import 'package:snackbar_with_getx/screens/call_screen.dart';
+import 'package:snackbar_with_getx/screens/draggable_scrollable_sheet_screen.dart';
+import 'package:snackbar_with_getx/screens/getstorage_emailvalidation.dart';
+import 'package:snackbar_with_getx/screens/image_picker_screen.dart';
 import 'package:snackbar_with_getx/screens/internationalization_screen.dart';
 import 'package:snackbar_with_getx/screens/qrcode_screen.dart';
 import 'package:snackbar_with_getx/screens/reordable_listview_screen.dart';
 import 'package:snackbar_with_getx/screens/scratcher_screen.dart';
 import 'package:snackbar_with_getx/screens/showdialog_screen.dart';
+import 'package:snackbar_with_getx/screens/signature_screen.dart';
 import 'package:snackbar_with_getx/screens/snackbar_screen.dart';
 import 'package:snackbar_with_getx/screens/uppercase_screen.dart';
 
@@ -19,7 +23,7 @@ class CommonDrawer extends StatelessWidget {
       // through the options in the drawer if there isn't enough vertical
       // space to fit everything.
       child: ListView(
-        // Important: Remove any padding from the ListView.
+        //Remove any padding from the ListView.
         padding: EdgeInsets.zero,
         children: [
           const DrawerHeader(
@@ -80,6 +84,30 @@ class CommonDrawer extends StatelessWidget {
             title: const Text('Scratcher'),
             onTap: () {
               Navigator.pushReplacementNamed(context, ScratcherScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Email validation'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, EmailValidation.id);
+            },
+          ),
+          ListTile(
+            title: const Text('DraggableScrollable'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context,DraggableScrollableSheetScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Signature'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context,SignatureScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Image Picker'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context,ImagePickerScreen.id);
             },
           ),
         ],
