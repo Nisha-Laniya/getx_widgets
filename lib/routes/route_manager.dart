@@ -6,12 +6,14 @@ import 'package:snackbar_with_getx/screens/draggable_scrollable_sheet_screen.dar
 import 'package:snackbar_with_getx/screens/getstorage_emailvalidation.dart';
 import 'package:snackbar_with_getx/screens/image_picker_screen.dart';
 import 'package:snackbar_with_getx/screens/internationalization_screen.dart';
+import 'package:snackbar_with_getx/screens/password_strength_screen.dart';
 import 'package:snackbar_with_getx/screens/qrcode_screen.dart';
 import 'package:snackbar_with_getx/screens/reordable_listview_screen.dart';
 import 'package:snackbar_with_getx/screens/scratcher_screen.dart';
 import 'package:snackbar_with_getx/screens/showdialog_screen.dart';
 import 'package:snackbar_with_getx/screens/signature_screen.dart';
 import 'package:snackbar_with_getx/screens/snackbar_screen.dart';
+import 'package:snackbar_with_getx/screens/stepper_screen.dart';
 import 'package:snackbar_with_getx/screens/uppercase_screen.dart';
 
 final Map<String,Widget Function(BuildContext)> routes=
@@ -29,4 +31,6 @@ final Map<String,Widget Function(BuildContext)> routes=
   DraggableScrollableSheetScreen.id : (context) => DraggableScrollableSheetScreen(),
   SignatureScreen.id: (context)  => SignatureScreen(),
   ImagePickerScreen.id: (context) => ImagePickerScreen(),
+  StepperScreen.id: (context) => StepperScreen(),
+  PasswordStrengthScreen.id: (context) => PasswordStrengthScreen(),
 };
