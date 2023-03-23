@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:snackbar_with_getx/screens/bottomsheet_screen.dart';
 import 'package:snackbar_with_getx/screens/call_screen.dart';
 import 'package:snackbar_with_getx/screens/draggable_scrollable_sheet_screen.dart';
+import 'package:snackbar_with_getx/screens/form_validation_screen.dart';
 import 'package:snackbar_with_getx/screens/getstorage_emailvalidation.dart';
 import 'package:snackbar_with_getx/screens/image_picker_screen.dart';
 import 'package:snackbar_with_getx/screens/internationalization_screen.dart';
@@ -122,6 +123,12 @@ class CommonDrawer extends StatelessWidget {
             title: const Text('Password Strength'),
             onTap: () {
               Navigator.pushReplacementNamed(context,PasswordStrengthScreen.id);
+            },
+          ),
+          ListTile(
+            title: const Text('Form validation'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context,FormValidationScreen.id);
             },
           ),
         ],

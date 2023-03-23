@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:snackbar_with_getx/screens/bottomsheet_screen.dart';
 import 'package:snackbar_with_getx/screens/call_screen.dart';
 import 'package:snackbar_with_getx/screens/draggable_scrollable_sheet_screen.dart';
+import 'package:snackbar_with_getx/screens/form_validation_screen.dart';
 import 'package:snackbar_with_getx/screens/getstorage_emailvalidation.dart';
 import 'package:snackbar_with_getx/screens/image_picker_screen.dart';
 import 'package:snackbar_with_getx/screens/internationalization_screen.dart';
@@ -33,4 +33,5 @@ final Map<String,Widget Function(BuildContext)> routes=
   ImagePickerScreen.id: (context) => ImagePickerScreen(),
   StepperScreen.id: (context) => StepperScreen(),
   PasswordStrengthScreen.id: (context) => PasswordStrengthScreen(),
+  FormValidationScreen.id: (context) => FormValidationScreen(),
 };
